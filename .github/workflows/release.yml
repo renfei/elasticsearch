@@ -2,7 +2,7 @@ name: Release
 
 on:
   push:
-    tag:
+    tags:
       - '*'
 
 env:
@@ -38,7 +38,7 @@ jobs:
         uses: docker/build-push-action@ad44023a93711e3deb337508980b4b5e9bcdc5dc
         with:
           context:  .
-          file: ${{ steps.meta.outputs.tags }}/Dockerfile
+          file: ${{ github.ref }}/Dockerfile
           push: true
-          tags: ${{ steps.meta.outputs.tags }}
+          tags: ${{ github.ref }}
           labels: ${{ steps.meta.outputs.labels }}
