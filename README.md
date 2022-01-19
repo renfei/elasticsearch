@@ -13,4 +13,4 @@ ElasticSearch install Analysis-IK docker container
 
 - docker pull ghcr.io/renfei/elasticsearch:7.16.3
 - docker pull registry.gitlab.com/renfei/elasticsearch:7.16.3
-- docker pull registry.gitlab.cn/renfei/elasticsearch:7.16.3
+- docker pull registry.jihulab.com/renfei/elasticsearch:7.16.3
