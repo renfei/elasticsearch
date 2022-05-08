@@ -2,7 +2,8 @@ FROM elasticsearch:8.1.2
 
 ENV VERSION=8.1.2
 
+RUN mkdir /usr/share/elasticsearch/ik
 # https://github.com/medcl/elasticsearch-analysis-ik/releases
-RUN ./bin/elasticsearch-plugin install https://github.com/medcl/elasticsearch-analysis-ik/releases/download/v${VERSION}/elasticsearch-analysis-ik-${VERSION}.zip
+ADD ./elasticsearch-analysis-ik-${VERSION}/* /usr/share/elasticsearch/plugins/ik/
 
-VOLUME ./config/analysis-ik
+VOLUME /usr/share/elasticsearch/plugins/ik/config
