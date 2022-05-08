@@ -39,5 +39,5 @@ jobs:
           context:  .
           file: ${{ github.event.release.tag_name }}/Dockerfile
           push: true
-          tags: ${{ github.event.release.tag_name }}
+          tags: ${{ env.REGISTRY }}:${{ github.event.release.tag_name }}
           labels: ${{ steps.meta.outputs.labels }}
