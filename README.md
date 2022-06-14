@@ -4,9 +4,9 @@ ElasticSearch Docker container with Analysis IK analyzer installed.
 
 ## Docker Container
 
-- docker pull ghcr.io/renfei/elasticsearch:8.1.2
-- docker pull registry.gitlab.com/renfei/elasticsearch:8.1.2
-- docker pull registry.jihulab.com/renfei/elasticsearch:8.1.2
+- docker pull ghcr.io/renfei/elasticsearch:8.2.0
+- docker pull registry.gitlab.com/renfei/elasticsearch:8.2.0
+- docker pull registry.jihulab.com/renfei/elasticsearch:8.2.0
 
 ## Repository
 
